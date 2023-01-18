@@ -1,0 +1,16 @@
+type Exchange @entity{
+    # Transaction Hash
+    id: ID!
+
+    # Block number
+    block: BigInt!
+
+    # Sender of token
+    from: String!
+
+    # Receiver of token
+    to: String!
+
+    # Amount of token sent
+    amount: BigInt!
+}
