@@ -1,4 +1,4 @@
-specVersion: 0.0.1
+specVersion: 0.0.2
 description: USDT Transfer Subgraph
 repository: https://github.com/3h600/SubgraphApiUSDT
 schema:
