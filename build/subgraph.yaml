@@ -2,7 +2,7 @@ specVersion: 0.0.2
 description: USDT Transfer Subgraph
 repository: https://github.com/3h600/SubgraphApiUSDT
 schema:
-  file: ./token.graphql
+  file: token.graphql
 dataSources:
   - kind: ethereum/contract
     name: Transfer
@@ -15,12 +15,12 @@ dataSources:
       kind: ethereum/events
       apiVersion: 0.0.6
       language: wasm/assemblyscript
-      file: ./mapping/transfer.ts
+      file: Transfer\Transfer.wasm
       entities:
         - Transfer
       abis:
         - name: USDT
-          file: ./abis/USDT.json
+          file: Transfer\abis\USDT.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfers
