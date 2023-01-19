@@ -6,7 +6,7 @@
   "scripts": {
     "codegen": "graph codegen ./token.yaml",
     "build": "graph build ./token.yaml",
-    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 3h600/usdt-transfers ./token.yaml --access-token"
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 3h600/SubgraphApiUSDT ./token.yaml --access-token"
   },
   "keywords": [],
   "author": "",
